@@ -75,7 +75,10 @@ public class Time12
 	{
 		int difference=0;
 		//Todo: add your code here
+		t1.toTime24();
+		t2.toTime24();
 
+		
 		// end of your code
 		return difference;
 	}
