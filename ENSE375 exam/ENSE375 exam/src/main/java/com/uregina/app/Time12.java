@@ -75,12 +75,14 @@ public class Time12
 	{
 		int difference=0;
 		//Todo: add your code here
-		t1.toTime24();
-		t2.toTime24();
+		Time24 Time1 = t1.toTime24();
+		Time24 Time2 = t2.toTime24();
 
 		
+		difference  = Time24.subtract(Time1, Time2); 
 		// end of your code
 		return difference;
+
 	}
 	/**
 	 * checks if a Time12 is before another one
