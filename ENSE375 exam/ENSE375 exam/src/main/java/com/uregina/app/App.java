@@ -3,6 +3,8 @@ package com.uregina.app;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.uregina.exceptions.InvalidTimeException;
+
 /**
  * App , creates a ticket and check its validity
  *
@@ -15,8 +17,9 @@ public class App
 	 * 		2. Printing the ticket
 	 * 		3. Get User restriction
 	 * 		4. Checking the ticket
+	 * @throws InvalidTimeException
 	 */
-    public static void main( String[] args )
+    public static void main( String[] args ) throws InvalidTimeException
     {
 		ArrayList<Flight> ticket= new ArrayList<Flight>();
 		Scanner scan = new Scanner(System.in);

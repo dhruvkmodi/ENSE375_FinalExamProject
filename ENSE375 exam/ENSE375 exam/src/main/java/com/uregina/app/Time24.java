@@ -49,7 +49,80 @@ public class Time24
 	{
 		Time24 time=null;
 		//Todo : add your code here
+		int h24 = hours;
+		int m24 = minutes; 
+		if (am_pm == AmPm.am)
+		{
+			if (h24 == 12)
+			{
+				h24 = 12;
+			}
+			else if((h24 >= 1) && (h24 <= 11))
+			{
+				h24 = hours;
+			}
+		}
+		if (am_pm == AmPm.pm)
+		{
+			if (h24 == 12)
+			{
+				h24 = 12;
+			}
+			else if((h24  >= 1) && (h24 <= 11) )
+			{
+				if (h24 == 1)
+				{
+					h24 = 13;
+				}
+				if (h24 == 2)
+				{
+					h24 = 14;
+				}
+				if (h24 == 3)
+				{
+					h24 = 15;
+				}
+				if (h24 == 4)
+				{
+					h24 = 16;
+				}
+				if (h24 == 5)
+				{
+					h24 = 17;
+				}
+				if (h24 == 6)
+				{
+					h24 = 18;
+				}
+				if (h24 == 7)
+				{
+					h24 = 19;
+				}
+				if (h24 == 8)
+				{
+					h24 = 20;
+				}
+				if (h24 == 9)
+				{
+					h24 = 21;
+				}
+				if (h24 == 10)
+				{
+					h24 = 22;
+				}
+				if (h24 == 11)
+				{
+					h24 = 23;
+				}
+				else 
+				{
+					System.out.println("Error");
+				}				
+			}
+		}
 
+		time.hours = h24;
+		time.minutes = m24;
 
 		// End of your code
 		return time;
