@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=m0a2CzgLNsc&ab_channel=edureka%21
+
+Ubuntu
+Username: dhruv
+Password: Jabubuntumet@2021
+
+https://hinty.io/ivictbor/simple-way-to-docker-on-windows-10-home-with-wsl-2/
+
+https://www.guru99.com/create-builds-jenkins-freestyle-project.html
+
+https://www.jenkins.io/doc/tutorials/build-a-java-app-with-maven/
