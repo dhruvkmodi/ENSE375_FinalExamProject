@@ -11,13 +11,13 @@ pipeline {
   stages {
     stage('Build') {
       steps{
-        sh 'mvn compile -f ENSE375_FinalExamProject/ENSE375 exam/ENSE375 exam/pom.xml'
+        sh 'mvn compile -f ENSE375 exam/ENSE375 exam/pom.xml'
       } 
     }
 
     stage('Test') {
       steps {
-        sh 'mvn test -f ENSE375_FinalExamProject/ENSE375 exam/ENSE375 exam/pom.xml'
+        sh 'mvn test -f ENSE375 exam/ENSE375 exam/pom.xml'
       }
     }
 
