@@ -51,7 +51,10 @@ public class DateTime
 	{
 		int diff=0;
 		//Todo: add your code here
-		Date.equal(d1.date, d2.date);
+		if (Date.equal(d1.date, d2.date) == false)
+		{
+		  throw new MoreThanOneDayException();
+		}
 		//end of your code
 		return diff;
 	}
