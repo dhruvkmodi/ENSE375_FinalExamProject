@@ -27,15 +27,22 @@ public class Time12Test
    Time12 timetest2 = new Time12(2, 30, AmPm.am);
    int True = 0;  
    True = Time12.subtract(timetest1, timetest2);
-   if (True > 0)
+   if (True < 0)
    {
    assertTrue(true);
    }
    } 
 
    @Test
-   public void Subtract_Time12ZeroDifference_True()
+   public void Subtract_Time12ZeroDifference_True() throws InvalidTimeException
    {
-    assertTrue(true);
+   Time12 timetest1 = new Time12(2, 30, AmPm.am);
+   Time12 timetest2 = new Time12(2, 30, AmPm.am);
+   int True = 0;  
+   True = Time12.subtract(timetest1, timetest2);
+   if (True == 0)
+   {
+   assertTrue(true);
+   }
    } 
 }
